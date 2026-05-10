@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Baby Cash Coin</title>
+
+  <link rel="stylesheet"
+  href="style.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- BULLES -->
+
+  <div class="floating-bg">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </div>
+
+  <!-- APP -->
+
+  <div class="app">
+
+    <!-- HEADER -->
+
+    <header class="top-header">
+
+      <div>
+
+        <p class="hello">
+          Bonjour 👋
+        </p>
+
+        <!-- BADGE -->
+
+        <div class="level-area">
+
+          <div class="badge-row">
+
+            <span class="bronze-badge">
+              🥉 Bronze
+            </span>
+
+            <span class="level-text">
+              Niveau 1
+            </span>
+
+          </div>
+
+          <div class="xp-bar-bg">
+
+            <div class="xp-bar-fill"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="right-header">
+
+        <button id="themeBtn"
+        class="theme-btn">
+
+          <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+        <!-- AVATAR -->
+
+        <div class="avatar-box">
+
+          <img src="images/avatar-default.jpg">
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- SOLDE -->
+
+    <section class="balance-card">
+
+      <div class="bridge-overlay"></div>
+
+      <p class="balance-label">
+        Solde principal
+      </p>
+
+      <h1 class="balance-value">
+        0 BCC
+      </h1>
+
+      <p class="balance-cfa">
+        ≈ 0 CFA
+      </p>
+
+    </section>
+
+    <!-- ACTIONS -->
+
+    <section class="actions">
+
+      <button class="action-btn">
+
+        <img src="icons/send.png">
+
+        <span>Envoyer</span>
+
+      </button>
+
+      <button class="action-btn">
+
+        <img src="icons/receive.png">
+
+        <span>Recevoir</span>
+
+      </button>
+
+      <button class="action-btn">
+
+        <img src="icons/scan.png">
+
+        <span>Scanner</span>
+
+      </button>
+
+      <button class="action-btn">
+
+        <img src="icons/convert.png">
+
+        <span>Convertir</span>
+
+      </button>
+
+    </section>
+
+    <!-- HISTORIQUE -->
+
+    <section class="history-box">
+
+      <div class="history-empty">
+
+        <i class="fa-solid fa-clock"></i>
+
+        <h3>
+          Aucun historique
+        </h3>
+
+        <p>
+          Les transactions apparaîtront ici
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- SERVICE -->
+
+    <button class="service-btn popup-btn">
+
+      Service Client
+
+    </button>
+
+    <!-- DECONNEXION -->
+
+    <button class="logout-btn popup-btn">
+
+      Se déconnecter
+
+    </button>
+
+  </div>
+
+  <!-- PAGE CADEAUX -->
+
+  <section class="gift-page hidden"
+  id="giftPage">
+
+    <div class="gift-header">
+
+      <h2>
+        🎁 Récompenses BCC
+      </h2>
+
+      <div class="gift-balance">
+
+        0 BCC
+
+      </div>
+
+      <p class="gift-level">
+
+        Niveau 1
+
+      </p>
+
+      <div class="gift-progress">
+
+        <div class="gift-progress-fill"></div>
+
+      </div>
+
+    </div>
+
+    <!-- GAIN -->
+
+    <button class="gain-btn popup-btn">
+
+      💸 Récupérer mes gains
+
+    </button>
+
+    <!-- WHEEL -->
+
+    <div class="wheel-section">
+
+      <h3>
+        🎡 Roue de la chance
+      </h3>
+
+      <div class="wheel"
+      id="wheel">
+
+        <div class="wheel-center">
+
+          BCC
+
+        </div>
+
+      </div>
+
+      <button id="spinBtn"
+      class="spin-btn">
+
+        Tourner la roue
+
+      </button>
+
+    </div>
+
+    <!-- ACCORDION -->
+
+    <div class="accordion">
+
+      <button class="accordion-btn">
+
+        🎁 Coffres Cadeaux
+
+      </button>
+
+      <div class="accordion-content">
+
+        <button class="mini-btn popup-btn">
+          Coffre Bronze
+        </button>
+
+        <button class="mini-btn popup-btn">
+          Coffre Silver
+        </button>
+
+        <button class="mini-btn popup-btn">
+          Coffre Gold
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PAGE MARKET -->
+
+  <section class="market-page hidden"
+  id="marketPage">
+
+    <div class="coming-card">
+
+      <i class="fa-solid fa-chart-line"></i>
+
+      <h2>
+        Marché BCC
+      </h2>
+
+      <p>
+        Service disponible bientôt
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- PAGE PROFIL -->
+
+  <section class="profile-page hidden"
+  id="profilePage">
+
+    <div class="profile-card">
+
+      <img src="images/avatar-default.jpg">
+
+      <h2>
+        Samuel Guei
+      </h2>
+
+      <p>
+        ID : BCC-0001
+      </p>
+
+    </div>
+
+    <div class="profile-form">
+
+      <input type="text"
+      placeholder="Nom complet">
+
+      <input type="text"
+      placeholder="Pseudo">
+
+      <input type="text"
+      placeholder="Téléphone">
+
+      <input type="email"
+      placeholder="Email">
+
+      <button class="save-btn popup-btn">
+
+        Enregistrer
+
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- NAVBAR -->
+
+  <nav class="bottom-nav">
+
+    <button class="nav-item active"
+    id="homeBtn">
+
+      <img src="images/nav-home.png">
+
+    </button>
+
+    <button class="nav-item"
+    id="giftBtn">
+
+      <img src="images/nav-gift.png">
+
+    </button>
+
+    <!-- LOGO -->
+
+    <button class="center-logo">
+
+      <img src="images/logo-bcc.png">
+
+    </button>
+
+    <button class="nav-item"
+    id="marketBtn">
+
+      <img src="images/nav-market.png">
+
+    </button>
+
+    <button class="nav-item"
+    id="profileBtn">
+
+      <img src="images/nav-profile.png">
+
+    </button>
+
+  </nav>
+
+  <!-- SLOGAN -->
+
+  <div class="ticker">
+
+    <marquee>
+
+      Bienvenue sur votre portefeuille de récompense numérique BCC
+
+    </marquee>
+
+  </div>
+
+  <!-- POPUP -->
+
+  <div class="popup"
+  id="popup">
+
+    Service disponible bientôt
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+  </html>
